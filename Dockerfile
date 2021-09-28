@@ -38,5 +38,8 @@ RUN echo "deb https://packages.grafana.com/enterprise/deb stable main" | tee -a 
 RUN apt-get update
 RUN apt-get install -y grafana-enterprise
 
+#Install graphviz
+RUN apt install graphviz
+
 #Install Java
-RUN apt-get update && apt-get install -y openjdk-8-jre-headless
+#RUN apt-get update && apt-get install -y openjdk-8-jre-headless
