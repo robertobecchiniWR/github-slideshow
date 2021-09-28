@@ -43,3 +43,6 @@ RUN apt install graphviz
 
 #Install Java
 #RUN apt-get update && apt-get install -y openjdk-8-jre-headless
+
+RUN useradd jenkins --shell /bin/bash --create-home
+USER jenkins
